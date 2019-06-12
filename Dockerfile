@@ -13,9 +13,10 @@ RUN apt-get install -y \
     evince \
     texlive-fonts-recommended \
     texlive-fonts-extra \
+    texlive-lang-cjk \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
-RUN apt-get update && apt-get install -y texlive-lang-cjk
+RUN apt-get update && apt-get install -y 
 
 RUN tlmgr init-usertree
 RUN kanji-config-updmap-sys ipaex
