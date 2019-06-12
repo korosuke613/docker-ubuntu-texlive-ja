@@ -11,7 +11,6 @@ RUN apt-get update && apt-get install -y \
     xdvik-ja \ 
     evince \
     texlive-fonts-recommended \
-    texlive-fonts-extra \
     texlive-lang-cjk \
     latexmk \
     language-pack-ja \
