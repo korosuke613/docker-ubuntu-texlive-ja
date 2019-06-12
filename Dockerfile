@@ -15,6 +15,8 @@ RUN apt-get update && apt-get install -y \
     texlive-lang-cjk \
     latexmk \
     language-pack-ja \
+    wget \
+    xzdec \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
